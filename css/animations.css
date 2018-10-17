@@ -1,0 +1,46 @@
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes contentDown{
+    0%{
+        margin-top: -200px;
+        transform: rotate(25deg);
+        opacity: 0;
+    }
+    
+    
+}
+@keyframes sectionAnimationRight{
+    0%{
+        position: relative;
+        left: -300px;
+        opacity: 0;
+    }
+
+    50%{
+        left: 0px;
+        opacity: 0.8;
+    }
+}
+@keyframes sectionAnimationLeft{
+    0%{
+        position: relative;
+        right: -300px;
+        opacity: 0;
+    }
+
+    50%{
+        right: 0px;
+        opacity: 0.8;
+    }
+}
+
+
+.headerConteudo{
+    animation: contentDown 4s;
+   
+}
+.headerConteudo p{
+    animation: fadeIn 5s;
+}

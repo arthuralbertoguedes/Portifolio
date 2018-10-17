@@ -1,0 +1,386 @@
+/*RESETS*/
+
+*{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sorts Mill Goudy', serif;
+    font-weight: 600;
+}
+html,body{
+    width: 100%;
+    height:100%;
+    overflow-x: hidden;
+}
+main{
+    background: none;
+    height: 100%;
+}
+body{
+    background-color: rgb(243, 239, 228);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1{
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 40px;
+    background: none;
+}
+ul,li,a,i{
+    background: none;
+}
+
+p{
+    text-indent: 15px;
+    font-weight: 400;
+    background: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    display: inline;
+    margin: 0 5px;
+    background: none;
+}
+
+/*Elementos Gerais*/
+.container{
+    width: 100%;
+    padding: 30px;
+    max-width: 1080px;
+    margin: 0 auto;
+    text-align: center;
+}
+.container100{
+    width: 100%;
+    padding: 30%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.botao{
+    width: 100px;
+    border-radius: 10px;
+    background-color: rgb(27, 25, 25);
+    color: rgb(243, 239, 228);
+    padding: 15px;
+    cursor: pointer;
+    margin: 15px 0;
+    font-weight: 500;
+}
+.botaoMenor{
+    padding: 10px;
+    
+    
+}
+.botao a{
+    background: none;
+    color: rgb(240, 221, 221);
+}
+.paddingTop{
+    padding-top: 25px;
+}   
+
+
+/*Header*/
+header{
+    box-shadow: 1px 1px 2px 2px gray;
+    padding: 30px;
+    background: url("../images/bg-3.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    
+}
+
+.navTop{
+    text-align: center;
+    width: 100%;
+    background-color: rgb(27, 25, 25);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: auto;
+    z-index: 4;
+    padding: 10px;
+}
+.navTop ul{
+    background: none;
+}
+.headerConteudo{
+    margin-top: 100px;
+    text-align: center;
+    background: none;
+    font-size: 20px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    background-color: rgb(27, 25, 25);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px black;
+   
+}
+.headerConteudo p{
+    font-family: 'Crimson Text', serif;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: rgb(243, 239, 228);
+    display: inline;
+}
+.headerConteudo p:first-of-type{
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 60px;
+    margin-right: 15px;
+}
+.headerConteudo p:first-of-type::before{
+    content: '"';
+}
+.headerConteudo p:last-of-type::after{
+    content: '"';
+    font-size: 60px;
+}    
+.titleSection{
+    font-size: 40px;
+    color: black;
+}
+.setaBaixo{
+  display: none;
+}
+/*Secão Apresentação*/
+.secaoApresentacao{
+    margin-top: 25px;
+    overflow: auto;
+    padding: 6% 4%;
+    background: none;
+
+}
+
+/*Seção Linguagens*/
+.secaoLinguagens,.linguagens,.linha{
+    /*background: rgb(27, 25, 25); */
+   /* background: rgba(48, 27, 172, 0.603);*/
+   background: rgb(243, 239, 228);
+   
+    
+}
+.secaoLinguagens{
+    padding-bottom: 5px;
+    
+}
+.divLinguagem{
+    height: auto;
+    padding: 30px;
+    text-align: center;
+    display: block;
+    margin: 1% auto;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 3px 5px 12px rgb(27, 25, 0, 0.5);
+    position: relative;
+    
+}
+.divConhecimentos{
+    font-size: 110%;
+    margin-bottom: 50px;
+    background: url("../images/bg-body.jpg");
+    border-radius: 10px;
+    color: rgb(255, 255, 255,0.8);
+    box-shadow: 3px 5px 12px rgb(27, 25, 0, 0.5);
+    margin-bottom: 150px;
+}
+.paragrafoConhecimentos{
+    font-family: 'Prosto One', cursive;
+    text-align: left;
+    
+}
+.paragrafoConhecimentos::before{
+    content: '✓';
+    color: green;
+    margin: 10px 10px 10px 0;
+    font-size: 110%;
+}
+
+/*Seção Projetos*/
+.divProjeto{
+    width: 100%;
+    box-shadow: 3px 5px 12px rgb(27, 25, 0, 0.5);
+    margin-bottom: 40px;
+    height: auto;
+    padding-top: 5px;
+    border-radius: 5px;
+}
+.secaoProjetos{
+    /*border: 1px solid rgb(27, 25, 0, 0.5);*/
+    /*background: rgb(212, 208, 199);*/
+    background: rgb(243, 239, 228);
+    overflow: auto;
+    padding: 45px;
+    padding-bottom: 70px;
+    color: black;
+}
+
+/*Seção Sobre Mim*/
+.secaoSobre{
+    background: url("../images/bg-body.jpg");
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    color: rgb(243, 239, 228);
+    text-justify: left;
+    padding: 20px 20px;
+}
+.secaoSobre h1{
+    margin-bottom: 15px;
+}
+.divSobreMim,.secaoSobre article, .secaoSobre .container{
+    background: none;
+}
+#fotoPessoal{
+    border-radius: 20px;
+    height: 250px;
+    margin-top: 20px;
+}
+/*Footer*/
+
+footer{
+    text-align: center;
+    background: url("../images/bg-body.jpg");
+    padding: 30px;
+    color: rgba(255,255,255,0.8);
+    font-size: 15px;
+   
+}
+.footerTitle{
+    margin-left: 45px;
+    margin-bottom: 15px;
+
+}
+footer .fab{
+    font-size: 40px;
+    margin: 0 5px;
+    color: rgba(255,255,255,0.8);
+}
+footer p{
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+/*Medias Queries*/
+
+
+/*Small Devices*/
+@media screen and (min-width: 560px){
+    /*Seção Linguagens*/
+    .divLinguagem{
+        width: 49%;
+        float: left;
+        margin-right: 1%;
+        margin: 0 auto;
+        height: 300px;
+        margin-bottom: 50px;
+    }
+    .divProjeto{
+        height:auto;
+    }
+    .divConhecimentos{
+        font-size: 130%;
+        background: none;
+        color: black;
+    }
+}
+
+/*Medium Devices*/
+@media screen and (min-width: 768px){
+    /*Header*/
+    .setaBaixo{
+    display: block;
+    margin: 0 auto;
+    width: 25px;
+    background: none;
+    font-size: 60px;
+    font-weight: 900;
+    color: white;
+    margin-top: 150px;
+    }
+    /*Alterações seção Apresentação*/
+    
+    /*Seção Linguagens*/
+    .divLinguagem{
+        width: 30%;
+        margin-right: 0;
+        margin-bottom: 50px;
+        height: auto;
+    }
+    .divLinguagem:nth-of-type(3){
+        margin-right: 10px;
+    }
+    .linha{
+        overflow: hidden;
+        display: flex;
+        margin-left: -25px;
+    }
+    .divConhecimentos{
+        font-size: 155%;
+        background: url("../images/bg-body.jpg");
+        color: rgba(255,255,255,0.8);
+        margin-bottom: 110px;
+    }
+  
+    .paragrafoConhecimentos::before{
+        content: '✓';
+        font-size: 120%;
+    }
+
+    /*Seção Projetos*/
+    .divProjeto{
+        width: 47%;
+        float: left;
+        margin: 1%;
+        height: 350px;
+        transition: 1s;
+        background-size: cover;
+        position: relative;
+    }
+    .divProjeto h3{
+        background: none;
+    }
+    .divHoverProjeto{
+        display: block;
+        background: rgba(0, 0, 0, 0.5);
+        height: 350px;
+        z-index: 3;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+    .divHidden{
+        display: none;
+
+    }
+    /*Secao Sobre Mim*/
+    .secaoSobre{
+       height: auto;
+       line-height: 35px;
+       font-size: 25px;
+    }
+    /*Footer*/
+    footer{
+        padding: 10px;
+        margin-top: 50px;
+    }
+}
