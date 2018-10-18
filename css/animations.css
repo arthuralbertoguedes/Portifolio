@@ -5,8 +5,9 @@
 @keyframes contentDown{
     0%{
         margin-top: -200px;
-        transform: rotate(25deg);
+        transform: rotateY(150deg);
         opacity: 0;
+        
     }
     
     
@@ -38,9 +39,12 @@
 
 
 .headerConteudo{
-    animation: contentDown 4s;
+    animation: contentDown 6s;
    
 }
 .headerConteudo p{
     animation: fadeIn 5s;
+}
+.navTop a{
+    animation:  fadeIn 6s;
 }
