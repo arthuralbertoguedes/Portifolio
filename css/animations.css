@@ -21,7 +21,7 @@
 
     50%{
         left: 0px;
-        opacity: 0.8;
+        
     }
 }
 @keyframes sectionAnimationLeft{
