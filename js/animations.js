@@ -39,12 +39,19 @@ function animateSection(){
     let divLinguagens = document.querySelectorAll('.divLinguagem')
     let body = document.querySelector('body')
     let divConhecimentos = document.querySelector('.divConhecimentos')
+    let divProjetos = document.querySelectorAll('.divProjeto')
+    
+    /*Aplicando hidden ás divs*/
+    divProjetos.forEach(function(value,index){
+        value.style.visibility = "hidden"
+    })
 
     divConhecimentos.style.visibility = "hidden"
     divLinguagens.forEach(function(value,index){
         value.style.visibility = "hidden"
     })
 
+    /*Aplicando animaçoes na posição exata do scroll*/
     body.addEventListener('scroll',function(){
         if(body.scrollTop > divLinguagens[0].offsetTop*4/5){
             divLinguagens.forEach(function(value,index){
@@ -61,6 +68,30 @@ function animateSection(){
             divConhecimentos.style.visibility = "visible"
             divConhecimentos.style.animation = "fadeIn 4s"
         }
+        if(body.scrollTop > divProjetos[0].offsetTop*1/3){
+            divProjetos[0].style.visibility = "visible"
+            divProjetos[0].style.animation = "sectionAnimationLeft 4s"
+        }
+        if(body.scrollTop > divProjetos[1].offsetTop*2/3){
+            divProjetos[1].style.visibility = "visible"
+            divProjetos[1].style.animation = "sectionAnimationRight 4s"
+        }       
+        if(body.scrollTop > divProjetos[2].offsetTop*5/6){
+            divProjetos[2].style.visibility = "visible"
+            divProjetos[2].style.animation = "sectionAnimationLeft 4s"
+        }   
+        if(body.scrollTop > divProjetos[3].offsetTop*5/6){
+            divProjetos[3].style.visibility = "visible"
+            divProjetos[3].style.animation = "sectionAnimationRight 4s"
+        }   
+        if(body.scrollTop > divProjetos[4].offsetTop*5/6){
+            divProjetos[4].style.visibility = "visible"
+            divProjetos[4].style.animation = "sectionAnimationLeft 4s"
+        }   
+        if(body.scrollTop > divProjetos[5].offsetTop*5/6){
+            divProjetos[5].style.visibility = "visible"
+            divProjetos[5].style.animation = "sectionAnimationRight 4s"
+        }   
     })
     
 }
