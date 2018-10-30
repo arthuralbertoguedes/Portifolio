@@ -18,11 +18,11 @@
         left: -300px;
         opacity: 0;
     }
-
-    50%{
-        left: 0px;
-        
+    
+    30%{
+        left:0;
     }
+    
 }
 @keyframes sectionAnimationLeft{
     0%{
@@ -31,9 +31,8 @@
         opacity: 0;
     }
 
-    50%{
-        right: 0px;
-        opacity: 0.8;
+    30%{
+        right:0;
     }
 }
 
