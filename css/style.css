@@ -7,20 +7,24 @@
     box-sizing: border-box;
     font-family: 'Sorts Mill Goudy', serif;
     font-weight: 600;
+    
 }
 html,body{
     width: 100%;
     height:100%;
     overflow-x: hidden;
+    
 }
 main{
     background: none;
     height: 100%;
+    
 }
 body{
     background-color: rgb(243, 239, 228);
     background-attachment: fixed;
     background-size: cover;
+    
 }
 
 h1{
@@ -78,8 +82,6 @@ li{
 }
 .botaoMenor{
     padding: 10px;
-    
-    
 }
 .botao a{
     background: none;
@@ -93,8 +95,7 @@ li{
 /*Header*/
 header{
     box-shadow: 1px 1px 2px 2px gray;
-    padding:30px;
-    background: url("../images/bg-new2.jpg");
+    background: url("../images/headerFundo.jpeg");
     background-attachment: fixed;
     background-size: cover;
     height: 100%;
@@ -103,45 +104,61 @@ header{
 
 .navTop{
     text-align: center;
+    background: rgba(0,0,0,0.4);
     width: 100%;
-    background-color: rgb(27, 25, 25);
+    overflow: auto;
+    padding-top: 10px;
+    transition: 2s;
+    overflow-y: hidden;
+}
+.navTopFixed{
+    text-align: center;
+    width: 100%;
+    overflow: auto;
+    padding: 10px;
+    background: rgba(0,0,0,0.8);
+    background: #F3EFE4;
+    padding: 20px;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    overflow: auto;
-    z-index: 4;
-    padding: 10px;
+    z-index: 9999;
+    animation: fadeIn 2s;
+    box-shadow: 3px 5px 12px rgb(27, 25, 0, 0.5);
+    
+}
+.textBlack{
+    color: black;
+    
+}
+.navTop a{
+    background:none !important;
+    animation: fadeIn 4s;
+    font-family: 'Acme', sans-serif;
 }
 .navTop ul{
     background: none;
 }
 .headerConteudo{
-    margin-top: 100px;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
     text-align: center;
-    background: none;
-    font-size: 20px;
-    margin-bottom: 10px;
-    max-width: 100%;
-    background-color: rgb(27, 25, 25);
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 2px 2px 2px black;
-   
+    overflow: hidden;
+    padding-top: 100px;
 }
 .headerConteudo p{
-    font-family: 'Crimson Text', serif;
-    font-size: 25px;
+    font-size: 40px;
     font-weight: 500;
     margin-bottom: 15px;
     color: rgb(243, 239, 228);
-    display: inline;
+    font-family: 'Shadows Into Light', cursive;
+    padding-top: 5px;
 }
 .headerConteudo p:first-of-type{
-    font-family: 'Gloria Hallelujah', cursive;
-    font-size: 60px;
-    margin-right: 15px;
+    padding-top: 40px;
 }
+
 .headerConteudo p:first-of-type::before{
     content: '"';
 }
@@ -154,7 +171,10 @@ header{
     color: black;
 }
 .setaBaixo{
-  display: none;
+    animation: animacaoSeta 1s infinite;
+    color: white;
+    font-size: 50px;
+    background: none;
 }
 /*Secão Apresentação*/
 .secaoApresentacao{
@@ -167,8 +187,6 @@ header{
 
 /*Seção Linguagens*/
 .secaoLinguagens,.linguagens,.linha{
-    /*background: rgb(27, 25, 25); */
-   /* background: rgba(48, 27, 172, 0.603);*/
    background: rgb(243, 239, 228);
    
     
@@ -216,8 +234,11 @@ header{
     box-shadow: 3px 5px 12px rgb(27, 25, 0, 0.5);
     margin-bottom: 40px;
     height: auto;
-    padding-top: 5px;
-    border-radius: 5px;
+    padding-top: 10px;
+    
+}
+.divProjeto h3{
+    margin-bottom: 10px;
 }
 .secaoProjetos{
     background: rgb(243, 239, 228);
@@ -225,6 +246,7 @@ header{
     padding: 45px;
     padding-bottom: 70px;
     color: black;
+    z-index: 10;
 }
 
 /*Seção Sobre Mim*/
@@ -315,7 +337,10 @@ footer p:last-of-type{
     font-size: 60px;
     font-weight: 900;
     color: white;
-    margin-top: 150px;
+    margin-top: 100px;
+    }
+    .headerConteudo p{
+        font-size: 55px;
     }
     /*Alterações seção Apresentação*/
     
@@ -388,4 +413,26 @@ footer p:last-of-type{
         padding: 10px;
         margin-top: 50px;
     }
+}
+
+
+/*Animaçoes*/
+@keyframes animacaoSeta{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/*Alterações script*/
+.itype{
+    background: transparent;
+}
+.ityped-cursor{
+    display: none;
 }
