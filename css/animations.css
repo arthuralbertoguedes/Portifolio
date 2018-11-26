@@ -35,15 +35,79 @@
         right:0;
     }
 }
+/*Animaçoes do header*/
+@keyframes animationTop{
+    0%{
+        transform: translateY(-300px);
+    }
+    
+}
+
+@keyframes animationLeft{
+    0%{
+        transform: translate(-900px,-800px);
+    }
+    40%{
+        transform: rotate(250deg);
+    }
+    
+}
 
 
-.headerConteudo{
-    animation: contentDown 6s;
-   
+@keyframes animationRight{
+    0%{
+        transform: translate(900px,800px);
+        color: turquoise;
+    }
+    10%{
+        color: blue;
+    }
+    15%{
+        color: blueviolet;
+    }
+    20%{
+        color: green;
+    }
+    25%{
+        color: yellowgreen;
+    }  
+    30%{
+        color: yellow;
+    }
+    35%{
+        color: tomato;
+    }
+    40%{
+        color: darkcyan;
+    }
+    45%{
+        color: green;
+    }
+    50%{
+        color: red;
+    }
+    55%{
+        color: blueviolet;
+    }
+    60%{
+        color: blue;
+    }
+    65%{
+        color: yellow;
+    }
+    70%{
+        color: orange;
+    }
+    75%{
+        color: blueviolet;
+    }
+    80%{
+        color: green;
+    }
+    85%{
+        color: yellow;
+    }
 }
-.headerConteudo p{
-    animation: fadeIn 5s;
-}
-.navTop a{
-    animation:  fadeIn 6s;
-}
+
+
+
