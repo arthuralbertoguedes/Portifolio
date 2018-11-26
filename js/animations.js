@@ -1,26 +1,17 @@
-/*Animação Arrow*/
-function arrowHidden(){
-    let seta = document.getElementsByClassName('setaBaixo')[0]
-    seta.style.visibility = "hidden"
-}
-function arrowVisible(){
-    let seta = document.getElementsByClassName('setaBaixo')[0]
-    seta.style.visibility = "visible"
-}
-setInterval(arrowHidden,1000)
-setInterval(arrowVisible,2000)
-
 
 /*Animação scroll Header*/
 
 function animateScrollHeader(){
     let body = document.querySelector('body')
     let conteudo = document.getElementsByClassName('headerConteudo')[0]
+    let navTop = document.getElementsByClassName('navTop')[0]
+    let linksMenu = document.querySelectorAll('#menuSuperior li a')
     body.addEventListener('scroll',function(){
         distanciaConteudoTop = conteudo.offsetTop
         distanciaBodyTop = body.scrollTop
         if(distanciaBodyTop>50){
             conteudo.style.opacity = "0.7"
+           
         }
         if(distanciaBodyTop>90){
             conteudo.style.opacity = "0.6"
@@ -31,7 +22,28 @@ function animateScrollHeader(){
         if(distanciaBodyTop<50){
             conteudo.style.opacity = "1"
         }
-    
+
+        /*Animação Menu Superior*/
+        if( window.innerWidth>678){
+            conteudo.style.height = "100%"
+            if(distanciaBodyTop>70){
+                navTop.classList.add('navTopFixed')
+                
+                linksMenu.forEach((value)=>{
+                    value.classList.add('textBlack')
+                })
+            }
+            else{
+                navTop.classList.remove('navTopFixed')
+                linksMenu.forEach((value)=>{
+                value.classList.remove('textBlack')
+                })
+            }
+        }
+        else{
+            conteudo.style.height = "93%"
+        }
+       
 })}
 
 /*Animação Seções do site*/
@@ -95,3 +107,21 @@ function animateSection(){
     })
     
 }
+
+function animateHeaderConteudo(){
+    let arrayParagrafos = document.querySelectorAll('.headerConteudo p')
+    
+    
+    arrayParagrafos[0].style.animation = "animationTop 2s"
+    arrayParagrafos[1].style.visibility = "hidden"
+    arrayParagrafos[2].style.visibility = "hidden"
+    setTimeout(function(){
+        arrayParagrafos[1].style.visibility = "visible"
+        arrayParagrafos[1].style.animation = "animationLeft 3s"
+    },2000)
+    setTimeout(function(){
+        arrayParagrafos[2].style.visibility = "visible"
+        arrayParagrafos[2].style.animation = "animationRight 3s"
+    },5000)
+}
+
