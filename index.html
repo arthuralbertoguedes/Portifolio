@@ -10,14 +10,15 @@
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Prosto+One|Sorts+Mill+Goudy" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Notable" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet"> 
     <title>Arthur Guedes Guedes - Portifólio</title>
 </head>
 <body>
     <header id="Topo">
-        <nav class="navTop">
-            <ul>
+        <nav class="navTop ">
+            <ul id="menuSuperior">
                 <li>
                     <a class="botao botaoMenor" href="#Topo">Home</a>
                 </li>
@@ -33,13 +34,10 @@
             </ul>
         </nav>
         <div class="headerConteudo">
-            <p>Olá!</p>
-            <p>Sou Arthur Alberto,</p>
-            <p>estudante de Ciências da Computação e</p>
-            <p>futuro desenvolvedor Front-End.</p>
-            <p>Venha conhecer o meu portifólio!</p>
+            <p> <span class="itype"> </span></p>
+            <span class="setaBaixo">&darr;</span>
         </div>
-        <span class="setaBaixo">&darr;</span>
+        
         
     </header> 
     <main>
@@ -47,7 +45,7 @@
                 <div class="container100 secaoProjetos" id="Projetos">
                     <h1 class="titleSection">Projetos</h1>
                    
-                    <div class="divProjeto" onmouseover="openProjectView(this)" >
+                    <div class="divProjeto"  onmouseover="openProjectView(this)">
                         <h3>Site Hamburgueria</h3>
                         <img src="images/projetoHamburgueria.jpg" alt="Site Hamburgueria" onmouseover="openProjectView(this)">
                         <div class=" divHoverProjeto divHidden">
@@ -85,8 +83,8 @@
                     <div class="divProjeto"  onmouseover="openProjectView(this)">
                         <h3>Sistema cadastro</h3>
                         <img src="images/projetoSistema.jpg" alt="Sistema cadastro" onmouseover="openProjectView(this)">
-                            <div class=" divHoverProjeto divHidden">
-                                <a target="blank"href="https://arthuralbertoguedes.github.io/"><button class="botao">Ver Projeto</button></a>
+                        <div class=" divHoverProjeto divHidden">
+                            <a target="blank"href="https://arthuralbertoguedes.github.io/"><button class="botao">Ver Projeto</button></a>
                         </div>
                     </div>
                 </div>
@@ -172,7 +170,14 @@
     </footer>
     <script src="js/functions.js"></script>
     <script src="js/animations.js"></script>
-    <script>animateScrollHeader();</script>
-    <script>animateSection();</script>
+    <script src="js/index.js"></script>
+    <script>
+    window.ityped.init(document.querySelector('.itype'),{
+        strings: ['Olá ','Bem vindo ao meu Portfólio', 'Venha conhecer meus projetos!'],
+        loop: false
+    })
+    </script>
+   <script>animateScrollHeader();</script>
+   <script>animateSection();</script>
 </body>
 </html>
