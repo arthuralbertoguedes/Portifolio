@@ -234,10 +234,18 @@ header{
     background: url("../images/fundoConhecimentos.jpg") center center/cover no-repeat;
     padding: 10%;
     margin-bottom: 50px;
+    overflow: hidden;
  }
  .containerConhecimentos h2{
      margin-top: 50px;
-     font-size: 25px !important;
+     font-size: 30px !important;
+     color: black;
+     text-shadow: 1px 1px 1px white;
+     font-family: 'Sorts Mill Goudy', serif;
+ }
+ .containerConhecimentos h1{
+    color: #F3EFE4;
+    text-shadow: 1px 1px 15px  black !important;
  }
  .containerConhecimentos canvas,.containerConhecimentos div,.containerConhecimentos h2{
      padding: 5px;
@@ -253,6 +261,7 @@ header{
 .chart{
     background: none;
     font-size: 45px;
+    
 }
 
 
@@ -462,7 +471,7 @@ footer p:last-of-type{
 .itype{
     background: transparent;
     font-family: 'Shadows Into Light', cursive;
-    
+    text-shadow: 1px 1px 15px  black !important;
 }
 .ityped-cursor{
    display: none;
@@ -481,8 +490,10 @@ footer p:last-of-type{
 @media screen and (max-width: 550px){
     h1,h2{
         font-size: 25px !important;
+        
     }
     .chart{
         font-size: 25px;
+        
     }
 }
