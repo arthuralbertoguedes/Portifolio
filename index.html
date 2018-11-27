@@ -97,7 +97,7 @@
                 <article>
                    <div class="divSobreMim">
                         <h1>Sobre mim</h1>
-                        <p>Criativo, dedicado, proativo. Meu nome é Arthur Alberto, tenho 24 anos e moro em Goiânia. Faço o sexto período de Ciência da Computação, curso no qual descobri a paixão pela programação, principalmente atuando no front-end, em projetos que buscam o desenvolvimento de sites e aplicações, além de sistemas utilizando Java e SQL.</p>
+                        <p>Criativo, dedicado, proativo. Meu nome é Arthur Alberto, tenho 24 anos e moro em Goiânia. Faço o sexto período de Ciência da Computação, curso no qual descobri a paixão pela programação, principalmente atuando no front-end, em projetos que buscam o desenvolvimento de sites e aplicações, além de sistemas utilizando Java, Php e SQL.</p>
                         <p>Tenho como principais qualidades a dedicação e a grande vontade de aprender cada vez mais, tendo os estudos como um hobby.</p>
                         <p>Estou em constante aprendizado de novas linguagens e frameworks, aumentando cada vez a área de atuação e os conhecimentos adquiridos</p>
                         <p>Venha conhecer minhas redes sociais!</p>
@@ -138,12 +138,33 @@
                     </div>
                 </div>      
             </div>
+
+            <div class="containerConhecimentos">
+                <h1>Conhecimentos em desenvolvimento</h1>
+                <div >
+                    <div class="divAprendizados">
+                        <h2>PHP</h2>
+                        <div class="chart" data-percent="60">60%</div>
+                    </div>
+                    <div class="divAprendizados">
+                        <h2>JAVA</h2>
+                        <div class="chart" data-percent="80">80%</div>
+                    </div>
+                    <div class="divAprendizados">
+                        <h2>SQL</h2>
+                        <div class="chart" data-percent="75">75%</div>
+                    </div>
+                </div>
+                
+            </div>    
+
             <div class="divConhecimentos container">
+                <p class="paragrafoConhecimentos">Criação de sistemas web ou desktop com PHP/Java/SQL</p>
                 <p class="paragrafoConhecimentos">HTML5, CSS3, ECMAScript 2015 (ES6) </p>
                 <p class="paragrafoConhecimentos">Versionamento com Git</p>
                 <p class="paragrafoConhecimentos">Noções de SASS</p>
                 <p class="paragrafoConhecimentos">Photoshop básico</p>
-                <p class="paragrafoConhecimentos">Lógica de programação</p>
+                <p class="paragrafoConhecimentos">Animações com keyframes ou javascript</p>
                 <p class="paragrafoConhecimentos">Desenvolvimento Responsivo</p>
                 <p class="paragrafoConhecimentos">Visual Studio, Netbeans, Android Studio, Geany</p>
                 <p class="paragrafoConhecimentos">PHPMyAdmin e Mysql Workbench</p>
@@ -175,12 +196,15 @@
     <script src="js/functions.js"></script>
     <script src="js/animations.js"></script>
     <script src="js/index.js"></script>
+    <script src="plugins/jquery.js"></script>
+    <script src="plugins/pluginPie.js"></script>
     <script>
     window.ityped.init(document.querySelector('.itype'),{
         strings: ['Olá ','Bem vindo ao meu Portfólio', 'Venha conhecer meus projetos!'],
         loop: false
     })
     </script>
+   <script>animateCircleBar();</script>
    <script>animateScrollHeader();</script>
    <script>animateSection();</script>
 </body>

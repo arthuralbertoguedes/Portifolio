@@ -30,3 +30,52 @@ function openProjectView(currentDiv){
         currentElement.classList.add('divHidden')
     })
 }
+
+function animateCircleBar(){
+    //Distancia do elemento para top
+    let distanciaDiv = $('.divAprendizados').position().top
+    $('body').on('scroll',function(){
+        let distanciaScroll = $('body').scrollTop()
+
+        if(distanciaScroll>distanciaDiv*0.9){
+            if(window.innerWidth>800){
+                $(function() {
+                    $('.chart').easyPieChart({
+                        barColor: "green",
+                        trackColor: "white",
+                        scaleLength: 0,
+                        lineWidth: 10,
+                        size: 150,
+                        animate: {
+                            duration: 3500,
+                            enabled: true
+                        }
+                    });
+                });
+            } 
+            else{
+                $(function() {
+                    $('.chart').easyPieChart({
+                        barColor: "green",
+                        trackColor: "white",
+                        scaleLength: 0,
+                        lineWidth: 6,
+                        size: 70,
+                        animate: {
+                            duration: 3500,
+                            enabled: true
+                        }
+                    });
+                });
+        
+            }   
+        }
+    })
+   
+    
+  
+    
+
+    
+  
+}

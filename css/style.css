@@ -31,6 +31,7 @@ h1{
     font-family: 'Gloria Hallelujah', cursive;
     font-size: 40px;
     background: none;
+    text-align: center;
 }
 ul,li,a,i{
     background: none;
@@ -228,6 +229,34 @@ header{
     font-size: 110%;
 }
 
+ /*Alterações seçao conhecimentos*/
+ .containerConhecimentos{
+    background: url("../images/fundoConhecimentos.jpg") center center/cover no-repeat;
+    padding: 10%;
+    margin-bottom: 50px;
+ }
+ .containerConhecimentos h2{
+     margin-top: 50px;
+     font-size: 25px !important;
+ }
+ .containerConhecimentos canvas,.containerConhecimentos div,.containerConhecimentos h2{
+     padding: 5px;
+     background: none;
+ }
+   .divAprendizados{
+    display: inline-block;
+    width: 31%;
+    text-align: center;
+    background: none;
+    position: relative;
+}
+.chart{
+    background: none;
+    font-size: 45px;
+}
+
+
+
 /*Seção Projetos*/
 .divProjeto{
     width: 100%;
@@ -318,8 +347,7 @@ footer p:last-of-type{
     }
     .divConhecimentos{
         font-size: 130%;
-        background: none;
-        color: black;
+        color: white;
     }
     footer p:last-of-type{
         font-size: 40px;
@@ -371,6 +399,7 @@ footer p:last-of-type{
         font-size: 120%;
     }
 
+ 
     /*Seção Projetos*/
     .divProjeto{
         
@@ -444,4 +473,16 @@ footer p:last-of-type{
         font-size: 80px;
     }
 
+}
+
+
+/*Alterações para small devices*/
+
+@media screen and (max-width: 550px){
+    h1,h2{
+        font-size: 25px !important;
+    }
+    .chart{
+        font-size: 25px;
+    }
 }
