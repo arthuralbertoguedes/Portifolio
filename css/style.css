@@ -95,7 +95,7 @@ li{
 /*Header*/
 header{
     box-shadow: 1px 1px 2px 2px gray;
-    background: url("../images/headerFundo.jpeg");
+    background: url("../images/headerFundo.jpg");
     background-attachment: fixed;
     background-size: cover;
     height: 100%;
@@ -164,7 +164,7 @@ header{
 }
 .headerConteudo p:last-of-type::after{
     content: '"';
-    font-size: 60px;
+    
 }    
 .titleSection{
     font-size: 40px;
@@ -432,7 +432,16 @@ footer p:last-of-type{
 /*Alterações script*/
 .itype{
     background: transparent;
+    font-family: 'Shadows Into Light', cursive;
+    
 }
 .ityped-cursor{
-    display: none;
+   display: none;
+}
+
+@media screen and (min-width: 968px){
+    .itype{
+        font-size: 80px;
+    }
+
 }
