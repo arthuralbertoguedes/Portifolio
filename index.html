@@ -193,16 +193,18 @@
         <p>agalbertoguedes@gmail.com</p>
         </main> 
     </footer>
+    <script src="plugins/jquery.js"></script>
     <script src="js/functions.js"></script>
     <script src="js/animations.js"></script>
     <script src="js/index.js"></script>
-    <script src="plugins/jquery.js"></script>
     <script src="plugins/pluginPie.js"></script>
     <script>
-    window.ityped.init(document.querySelector('.itype'),{
-        strings: ['Olá ','Bem vindo ao meu Portfólio', 'Venha conhecer meus projetos!'],
-        loop: false
-    })
+        $(document).ready(function () {
+            window.ityped.init(document.querySelector('.itype'),{
+                strings: ['Olá ','Bem vindo ao meu Portfólio', 'Venha conhecer meus projetos!'],
+                loop: false
+            })
+        })
     </script>
    <script>animateCircleBar();</script>
    <script>animateScrollHeader();</script>
