@@ -13,25 +13,31 @@
     <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Notable" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/bootstrap.css">
     <title>Arthur Guedes Guedes - Portifólio</title>
 </head>
 <body>
     <header id="Topo">
-        <nav class="navTop ">
-            <ul id="menuSuperior">
-                <li>
-                    <a class="botao botaoMenor" href="#Topo">Home</a>
-                </li>
-                <li>
-                    <a class="botao botaoMenor" href="#Conhecimentos">Conhecimentos</a>
-                </li>
-                <li>
-                    <a class="botao botaoMenor" href="#Projetos">Projetos</a>
-                </li>
-                <li>
-                    <a class="botao botaoMenor" href="#Social">Social</a>
-                </li>
-            </ul>
+        <nav class=" navbar navbar-expand-md navTop p-0 navbar-dark">
+            <button class="navbar-toggler ml-auto m-1" type="button" data-toggle="collapse" data-target="#navBarCollapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>    
+            <div class="collapse navbar-collapse" id="navBarCollapse">
+                <ul id="menuSuperior" class="navbar-nav mx-auto">
+                    <li class="nav-item mx-auto">
+                        <a class="botao botaoMenor nav-link" href="#Topo">Home</a>
+                    </li>
+                    <li class="nav-item mx-auto">
+                        <a class="botao botaoMenor nav-link" href="#Conhecimentos">Conhecimentos</a>
+                    </li>
+                    <li  class="nav-item  mx-auto">
+                        <a class="botao botaoMenor nav-link" href="#Projetos">Projetos</a>
+                    </li>
+                    <li  class="nav-item  mx-auto">
+                        <a class="botao botaoMenor nav-link" href="#Social">Social</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <div class="headerConteudo">
             <p> <span class="itype"> </span></p>
@@ -193,11 +199,14 @@
         <p>agalbertoguedes@gmail.com</p>
         </main> 
     </footer>
+    
     <script src="plugins/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="js/functions.js"></script>
     <script src="js/animations.js"></script>
     <script src="js/index.js"></script>
     <script src="plugins/pluginPie.js"></script>
+    <script src="plugins/bootstrap.js"></script>
     <script>
         $(document).ready(function () {
             window.ityped.init(document.querySelector('.itype'),{

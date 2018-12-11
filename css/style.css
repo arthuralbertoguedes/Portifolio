@@ -28,7 +28,7 @@ body{
 }
 
 h1{
-    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Gloria Hallelujah', cursive !important;
     font-size: 40px;
     background: none;
     text-align: center;
@@ -104,32 +104,32 @@ header{
 }
 
 .navTop{
-    text-align: center;
-    background: rgba(0,0,0,0.4);
-    width: 100%;
-    overflow: auto;
-    padding-top: 10px;
-    transition: 2s;
-    overflow-y: hidden;
+    text-align: center !important;
+    background: rgba(0,0,0,0.4) !important;
+    width: 100% !important;
+    overflow: auto !important;
+    padding-top: 10px !important;
+    transition: 2s !important;
+    overflow-y: hidden !important;
 }
 .navTopFixed{
-    text-align: center;
-    width: 100%;
-    overflow: auto;
+    text-align: center !important;
+    width: 100% !important;
+    overflow: auto !important;
     padding: 10px;
-    background: rgba(0,0,0,0.8);
-    background: #F3EFE4;
-    padding: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    animation: fadeIn 2s;
-    box-shadow: 3px 5px 12px rgb(27, 25, 0, 0.5);
+    background: rgba(0,0,0,0.8) !important;
+    background: #F3EFE4 !important;
+    padding: 20px !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 9999 !important;
+    animation: fadeIn 2s !important;
+    box-shadow: 3px 5px 12px rgb(27, 25, 0, 0.5) !important;
     
 }
 .textBlack{
-    color: black;
+    color: black !important;
     
 }
 .navTop a{
@@ -170,6 +170,7 @@ header{
 .titleSection{
     font-size: 40px;
     color: black;
+    margin-bottom: 40px;
 }
 .setaBaixo{
     animation: animacaoSeta 1s infinite;
@@ -473,9 +474,17 @@ footer p:last-of-type{
     font-family: 'Shadows Into Light', cursive;
     text-shadow: 1px 1px 15px  black !important;
 }
-.ityped-cursor{
-   display: none;
+
+.itype::after{
+    content: '|';
+    font-size: 55px;
+    animation: piscar 1s infinite;
+    margin: 0 5px;
 }
+.ityped-cursor{
+    display: none;
+}
+
 
 @media screen and (min-width: 968px){
     .itype{
@@ -496,4 +505,19 @@ footer p:last-of-type{
         font-size: 25px;
         
     }
+    .headerConteudo{
+        opacity: 1 !important;
+    }
+}
+
+/*Alterações para bootstrap*/
+
+.collapse, .navbar-collapse{
+    background: none !important;
+}
+.nav-link{
+    color: rgb(243, 239, 228);
+}
+.navbar-dark{
+    color: rgb(243, 239, 228) !important;
 }
