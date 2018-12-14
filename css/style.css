@@ -100,7 +100,7 @@ header{
     background-attachment: fixed;
     background-size: cover;
     height: 100%;
-    
+    overflow: hidden;
 }
 
 .navTop{
@@ -450,7 +450,7 @@ footer p:last-of-type{
     /*Footer*/
     footer{
         padding: 10px;
-        margin-top: 50px;
+        
     }
 }
 
